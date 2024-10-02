@@ -96,5 +96,15 @@ namespace WinFormsNoetpadApp
             textBoxEditor.Font = fontDialog.Font;
             textBoxEditor.ForeColor = fontDialog.Color;
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxEditor_TextChanged(object sender, EventArgs e)
+        {
+            toolStatusColumn.Text = textBoxEditor.SelectionStart.ToString();
+        }
     }
 }
